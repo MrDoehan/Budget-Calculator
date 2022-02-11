@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib as mpl
+from matplotlib import pyplot as plt
 #default values
 a = "a"
 b = "b"
@@ -49,3 +51,6 @@ print("The Average amount column show an approximate amount of money that should
 print("The money spent column is how much money you spend on each category per month")
 print("The surplus/deficit shows if you are spending more or less than the average and by how much. if the number is negative, your spending is over the average of that category.")
 print("If you spend the average, you have remainder money that can be used for nonessential categories.")
+
+graph = data.plot.bar(rot=0, stacked=True)
+plt.show()
